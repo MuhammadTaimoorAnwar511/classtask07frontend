@@ -4,17 +4,18 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Chart from "./pages/Chart";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
-        {/* Redirect the root path to the Login page */}
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/chart" element={<Chart />} />
       </Routes>
     </Router>
   );

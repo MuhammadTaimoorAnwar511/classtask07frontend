@@ -7,14 +7,14 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between">
         <h1 className="text-xl font-bold">My App</h1>
         <div>
-          {/* <Link to="/" className="mr-4 hover:text-gray-200">
-            Home
-          </Link> */}
           <Link to="/login" className="mr-4 hover:text-gray-200">
             Login
           </Link>
-          <Link to="/signup" className="hover:text-gray-200">
+          <Link to="/signup" className="mr-4 hover:text-gray-200">
             Signup
+          </Link>
+          <Link to="/chart" className="hover:text-gray-200">
+            Chart
           </Link>
         </div>
       </div>
